@@ -7,8 +7,7 @@ class fetch with ChangeNotifier {
   num? _temperature;
   num? get temperature => _temperature;
   Future<void> fetchTemp() async {
-    const url =
-        "https://fire-5448b-default-rtdb.firebaseio.com/FirebaseIOT.json";
+    const url = "fetch_link_for_short_circuit";
     try {
       final response = await http.get(Uri.parse(url));
       final extractedData = json.decode(response.body);
@@ -22,8 +21,7 @@ class fetch with ChangeNotifier {
   bool? _shortCircuit;
   bool? get shortCircuit => _shortCircuit;
   Future<void> fetchShortCircuit() async {
-    const url =
-        "https://fire-5448b-default-rtdb.firebaseio.com/FirebaseIOT.json";
+    const url = "fetch_for_short_circuit";
     try {
       final response = await http.get(Uri.parse(url));
       final extractedData = json.decode(response.body);
@@ -34,10 +32,3 @@ class fetch with ChangeNotifier {
     }
   }
 }
-// child: Consumer<CartItemCounter>(
-                        //     builder: (context, counter, c) {
-                        //   return Text(
-                        //     counter.count.toString(),
-                        //     style: TextStyle(color: Colors.black, fontSize: 12),
-                        //   );
-                        // }),
