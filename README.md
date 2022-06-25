@@ -1,6 +1,7 @@
-# fire
-It An ecosystem that alerts the user on the event of any fire and short circuit incident in an app
-
+# Ablaze
+It An ecosystem that alerts the user on the event of any fire and short circuit incident in an app.
+In app it is going to show the current temperature and whether the there is fire and short circuit 
+in the room or not with firebase.
 
 
 Screenshots
